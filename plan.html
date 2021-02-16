@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coffeeroasters subscription site</title>
+  </head>
+  <body>
+    <div class="website">
+      <div class="nav">
+        <img src="/assets/shared/desktop/logo.svg" alt="logo" class="logo" />
+        <img
+          src="/assets/shared/mobile/icon-hamburger.svg"
+          alt="burguer"
+          class="burguer"
+          id="burguer"
+        />
+        <div class="nav-items">
+          <h4><a href="/index.html">Home</a></h4>
+          <h4><a href="/about.html">About us</a></h4>
+          <h4><a href="/plan.html">Create your plan</a></h4>
+        </div>
+      </div>
+      <div class="mobile-nav-dropdown hide" id="mobile-nav-dropdown">
+        <h4><a href="/index.html">Home</a></h4>
+        <h4><a href="/about.html">About us</a></h4>
+        <h4><a href="/plan.html">Create your plan</a></h4>
+      </div>
+      <div class="modal-wrapper hide">
+        <div class="modal hide" id="modal">
+          <div class="title">
+            <h1>Order Summary</h1>
+            <div class="img-wrapper" id="close">
+              <img src="/assets/shared/mobile/close-modal.png" alt="close" />
+            </div>
+          </div>
+          <div class="checkout-text" id="checkout-text">
+            “I drink my coffee as <span>_____</span> , with a
+            <span>_____</span> type of bean. <span>_____</span> ground ala
+            <span>_____</span> , sent to me <span>_____</span> .”
+          </div>
+          <h6>
+            Is this correct? You can proceed to checkout or go back to plan
+            selection if something is off. Subscription discount codes can also
+            be redeemed at the checkout.
+          </h6>
+          <div class="checkout-btn">
+            <button>Checkout - $<span id="price"></span> / mo</button>
+          </div>
+        </div>
+      </div>
+      <div class="plan" id="plan">
+        <div class="info">
+          <h1>Create a plan</h1>
+          <h5>
+            Build a subscription plan that best fits your needs. We offer an
+            assortment of the best artisan coffees from around the globe
+            delivered fresh to your door.
+          </h5>
+        </div>
+        <div class="container">
+          <div class="img-container">
+            <img
+              src="/assets/plan/tablet/pattern.png"
+              alt="pattern1"
+              class="pattern1"
+            />
+            <img
+              src="/assets/plan/desktop/pattern.png"
+              alt="pattern2"
+              class="pattern2"
+            />
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <h1>01</h1>
+              <h2>Pick your coffee</h2>
+              <h5>
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them. There's new
+                coffees in all profiles every month for you to try out.
+              </h5>
+            </div>
+            <div class="box">
+              <h1>02</h1>
+              <h2>Choose the frequency</h2>
+              <h5>
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip or cancel your subscription with no
+                commitment through our online portal.
+              </h5>
+            </div>
+            <div class="box">
+              <h1>03</h1>
+              <h2>Receive and enjoy!</h2>
+              <h5>
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees curated to provide a
+                distinct tasting experience.
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="shortcuts">
+            <div class="box shortcut-box">
+              <h1 class="nums">01</h1>
+              <h1 class="options">Preferences</h1>
+            </div>
+            <hr />
+            <div class="box shortcut-box">
+              <h1 class="nums">02</h1>
+              <h1 class="options">Bean type</h1>
+            </div>
+            <hr />
+            <div class="box shortcut-box">
+              <h1 class="nums">03</h1>
+              <h1 class="options">Quantity</h1>
+            </div>
+            <hr />
+            <div class="box shortcut-box">
+              <h1 class="nums">04</h1>
+              <h1 class="options">Grind option</h1>
+            </div>
+            <hr />
+            <div class="box shortcut-box">
+              <h1 class="nums">05</h1>
+              <h1 class="options">Deliveries</h1>
+            </div>
+          </div>
+          <div class="main-container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <h1>How do you drink your coffee?</h1>
+                  <img src="/assets/plan/desktop/icon-arrow.svg" alt="star" />
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <h3>Capsule</h3>
+                    <h5>
+                      Compatible with Nespresso systems and similar brewers
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Filter</h3>
+                    <h5>
+                      For pour over or drip methods like Aeropress, Chemex, and
+                      V60
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Espresso</h3>
+                    <h5>
+                      Dense and finely ground beans for an intense, flavorful
+                      experience
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <h1>What type of coffee?</h1>
+                  <img src="/assets/plan/desktop/icon-arrow.svg" alt="star" />
+                </div>
+
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <h3>Single origin</h3>
+                    <h5>
+                      Distinct, high quality coffee from a specific family-owned
+                      farm
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Decaf</h3>
+                    <h5>
+                      Just like regular coffee, except the caffeine has been
+                      removed
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Blended</h3>
+                    <h5>
+                      Combination of two or three dark roasted beans of organic
+                      coffees
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <h1>How much would you like?</h1>
+                  <img src="/assets/plan/desktop/icon-arrow.svg" alt="star" />
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <h3>250g</h3>
+                    <h5>
+                      Perfect for the solo drinker. Yields about 12 delicious
+                      cups.
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>500g</h3>
+                    <h5>
+                      Perfect option for a couple. Yields about 40 delectable
+                      cups.
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>1000g</h3>
+                    <h5>
+                      Perfect for offices and events. Yields about 90 delightful
+                      cups.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <h1>Want us to grind them?</h1>
+                  <img src="/assets/plan/desktop/icon-arrow.svg" alt="star" />
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <h3>Wholebean</h3>
+                    <h5>
+                      Best choice if you cherish the full sensory experience
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Filter</h3>
+                    <h5>
+                      For drip or pour-over coffee methods such as V60 or
+                      Aeropress
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Cafetiére</h3>
+                    <h5>
+                      Course ground beans specially suited for french press
+                      coffee
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  <h1>How often should we deliver?</h1>
+                  <img src="/assets/plan/desktop/icon-arrow.svg" alt="star" />
+                </div>
+                <div class="accordion-item-body">
+                  <div class="accordion-item-body-content">
+                    <h3>Every week</h3>
+                    <h5>
+                      $14.00 per shipment. Includes free first-class shipping.
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Every 2 weeks</h3>
+                    <h5>
+                      $17.25 per shipment. Includes free priority shipping.
+                    </h5>
+                  </div>
+                  <div class="accordion-item-body-content">
+                    <h3>Every month</h3>
+                    <h5>
+                      $22.50 per shipment. Includes free priority shipping.
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="summary">
+              <h3>Order Summary</h3>
+              <div class="text" id="summary-text">
+                “I drink my coffee as <span>_____</span> , with a
+                <span>_____</span> type of bean. <span>_____</span> ground ala
+                <span>_____</span> , sent to me <span>_____</span> .”
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button id="checkout">Create my plan!</button>
+              <h6 id="error">Please complete your order</h6>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="logo-container">
+            <img src="/assets/shared/desktop/logo-white.png" alt="logo" />
+          </div>
+          <div class="footer-nav">
+            <h5><a href="/index.html">Home</a></h5>
+            <h5><a href="/about.html">About us</a></h5>
+            <h5><a href="/plan.html">Create your plan</a></h5>
+          </div>
+          <div class="social">
+            <img src="/assets/shared/desktop/icon-facebook.svg" alt="fb" />
+            <img src="/assets/shared/desktop/icon-twitter.svg" alt="twitter" />
+            <img src="/assets/shared/desktop/icon-instagram.svg" alt="ig" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+    <script src="/common.js"></script>
+  </body>
+</html>
