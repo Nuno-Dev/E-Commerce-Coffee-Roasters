@@ -517,6 +517,11 @@ a {
   font-family: var(--font1);
 }
 
+.home .title2 .pattern1,
+.home .title2 .pattern2 {
+  display: none;
+}
+
 .home .boxes1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1242,7 +1247,11 @@ a {
     margin-bottom: 40px;
   }
   .home .title2 .pattern1 {
+    display: none;
+  }
+  .home .title2 .pattern2 {
     display: block;
+    width: 63vw;
   }
   .home .boxes1 {
     -webkit-box-orient: horizontal;
@@ -1731,7 +1740,7 @@ a {
   }
   .home .title2 .pattern2 {
     display: block;
-    width: 55vw;
+    max-width: 920px;
   }
   .home .boxes1 {
     margin-left: 90px;
