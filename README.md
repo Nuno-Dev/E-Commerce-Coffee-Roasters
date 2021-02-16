@@ -5,7 +5,7 @@ Hi! This is my biggest project so far, 3 landing pages, fully functional respons
 
 In this project I used accordions, modals, Flexbox and a lot of exciting stuff. Hope you enjoy it!
 
-Link: https://e-commerce-coffee-roasters.vercel.app/ 
+Link: https://e-commerce-coffee-roasters.vercel.app/
 
 # Previews:
 
