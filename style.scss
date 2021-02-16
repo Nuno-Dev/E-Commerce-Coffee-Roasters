@@ -414,6 +414,10 @@ a {
       color: #83888f;
       font-family: var(--font1);
     }
+    .pattern1,
+    .pattern2 {
+      display: none;
+    }
   }
   .boxes1 {
     display: flex;
@@ -1032,7 +1036,11 @@ a {
         margin-bottom: 40px;
       }
       .pattern1 {
+        display: none;
+      }
+      .pattern2 {
         display: block;
+        width: 63vw;
       }
     }
     .boxes1 {
@@ -1484,7 +1492,7 @@ a {
       }
       .pattern2 {
         display: block;
-        width: 55vw;
+        max-width: 920px;
       }
     }
     .boxes1 {
