@@ -1,7 +1,7 @@
 # E-Commerce-Coffee-Roasters
 Fully functional Responsive E-Commerce website
 
-Hi! This is my biggest project so far, 3 landing pages, fully functional responsive e-commerce website for a coffee brand.
+Hi! This is a fully functional responsive e-commerce website for a coffee brand made of 3 different landing pages.
 
 In this project I used accordions, modals, Flexbox and a lot of exciting stuff. Hope you enjoy it!
 
